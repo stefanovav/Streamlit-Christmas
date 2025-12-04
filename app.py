@@ -81,7 +81,7 @@ members = np.array([
 st.subheader("Support Conditions")
 
 restrainedDoF = st.text_input(
-    "Restrained degrees of freedom (comma-separated):",
+    "Restrained degrees of freedom, started at 1 (comma-separated):",
     value="1, 2, 10"
 )
 
@@ -95,7 +95,7 @@ st.subheader("External Loads")
 forceVector = np.zeros((16, 1))
 
 dof_input = st.text_input(
-    "Enter DOFs to apply forces (comma-separated):",
+    "Enter DOFs to apply forces, by index, started at 0 (comma-separated):",
     value="3, 5, 7"
 )
 
